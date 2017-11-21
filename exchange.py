@@ -6,7 +6,7 @@ class Exchange():
         try:
 	    # should be a post request !!
             bmybit.get('/exchanges/order',
-                        data={'exchange':   exchange,
+                        params={'exchange':   exchange,
                               'pair':       pair,
                               'currency':   currency,
                               'condition':  amount})
